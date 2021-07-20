@@ -13,7 +13,7 @@ add_executable(ip_filter_cli main.cpp)
 add_library(my_lib ip_filter.cpp)
 add_executable(test_version test_version.cpp)
 
-set_target_properties(ip_filter_cli test_version PROPERTIES # helloworld test_version PROPERTIES ip_filter_cli
+set_target_properties(ip_filter_cli test_version PROPERTIES 
     CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON
 )
@@ -71,4 +71,4 @@ include(CPack)
 
 enable_testing()
 
-add_test(test_version test_ip)
+add_test(test_ip test_version)
